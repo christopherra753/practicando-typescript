@@ -27,15 +27,37 @@ presentacion2({ name: "Roberto", age: 15 })
 
 
 
+const sayHi = (name: string) => {
+  console.log(`Hola ${name}`)
+}
 
 
-
-const sayHiFromFunction = (fn) =>{
+const sayHiFromFunction = (fn: (name: string) => void) => {
   fn("Miguel")
 }
 
-sayHiFromFunction((name)=>{
-  console.log(`Hola ${name}`)
+sayHiFromFunction(sayHi)
+
+
+//Arrow functions
+
+const sumar = (a: number, b: number): number => {
+  return a + b
+}
+
+
+//Never
+function throwError(message: string): never {
+  throw new Error(message)
+}
+
+
+//inferencia funciones anonimas segun el contexto
+const avengers = ["spiderman", "hulk", "iron man"]
+
+avengers.forEach(avenger => {
+  console.log(avenger.toUpperCase())
 })
+
 
 

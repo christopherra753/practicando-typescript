@@ -19,4 +19,11 @@ Esto puede ser cualquier tipo de dato, y ademas que **IGNORA** el tipado de Type
 
 No sabemos cual es el tipo
 
+## VOID
 
+Cuando una funcion no devuelve nada, se le dice que devuelve un void **(NADA)**
+
+
+## NEVER
+
+El never nunca va a devolver nada
